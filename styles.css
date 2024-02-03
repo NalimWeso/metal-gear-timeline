@@ -17,7 +17,7 @@ body {
     background-color: #222222EC;
     color: white;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .content {
@@ -27,31 +27,24 @@ body {
     flex-direction: column;
 }
 
+.container-game {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0.3vw 0;
+}
+
 .collapsible {
     background-color: var(--button-main);
     text-align: left;
     border: .5vw solid var(--border-main);
-    border-radius: 10px 10px 0 0;
+    border-radius: 1vw 1vw 0 0;
     outline: none;
     position: relative;
     width: 100%;
     margin-top: 0;
-    padding: 0.5rem 0;
+    padding: .5vw 0;
     cursor: pointer;
     transition: all .5s ease-in-out;
-}
-
-.container-game {
-    width: 95%;
-    margin: 0.3vw 0;
-}
-
-@media (min-width: 1700px) {
-    .container-game {
-        width: 1640px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 .collapsible:hover::before {
@@ -89,11 +82,17 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 1rem;
+    right: 1vw;
 }
 
 .active:after {
     content: "\2212";
+}
+
+.type,
+.title {
+    vertical-align: middle;
+    line-height: 2;
 }
 
 .type {
@@ -103,14 +102,14 @@ body {
     border: .3vw solid white;
     border-radius: 1.5vw;
     margin: .3vw .7vw;
-    padding: .5vw;
+    padding: .3vw .7vw;
     display: inline-block;
     transition: background-color .5s ease-in-out;
 }
 
 .title {
     color: white;
-    font-size: 1.7vw;
+    font-size: 3.3vw;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     display: inline-block;
@@ -122,7 +121,7 @@ body {
     background-color: var(--text-main);
     border: .5vw solid var(--border-main);
     border-top: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 1vw 1vw;
     display: flex;
     justify-content: space-between;
     max-height: 0;
@@ -131,7 +130,6 @@ body {
 }
 
 .info {
-    font-size: 2vw;
     background-color: var(--text-main);
     display: inline-block;
     width: 100%;
@@ -139,6 +137,7 @@ body {
 
 .incident {
     background-color: var(--incident-main);
+    font-size: 3vw;
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -148,6 +147,7 @@ body {
 }
 
 .text {
+    font-size: 2.5vw;
     margin: 0;
     padding: 1vw;
 }
@@ -165,4 +165,54 @@ img {
 
 .container-image {
     display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+    .container-game {
+        margin: 3.6px 0;
+    }
+
+    .collapsible {
+        border: 6px solid var(--border-main);
+        border-radius: 12px 12px 0 0;
+        padding: 6px 0;
+    }
+
+    .collapsible:after {
+        font-size: 24px;
+        right: 12px;
+    }
+
+    .type {
+        font-size: 24px;
+        border: 3.6px solid white;
+        border-radius: 18px;
+        margin: 3.6px 8.4px;
+        padding: 3.6px 8.4px;
+    }
+
+    .title {
+        font-size: 39.6px;
+    }
+
+    .container-info {
+        border: 6px solid var(--border-main);
+        border-radius: 0 0 12px 12px;
+    }
+
+    .incident {
+        font-size: 36px;
+        padding: 12px;
+        border-bottom: 6px solid var(--border-incident-main);
+    }
+
+    .text {
+        font-size: 30px;
+        padding: 12px;
+    }
+
+    img {
+        width: 276px;
+        border-left: 6px solid var(--border-incident-main);
+    }
 }

@@ -73,36 +73,16 @@ body {
     }
 }
 
-.collapsible:after {
-    color: white;
-    content: '\002B';
-    font-size: 2vw;
-    font-weight: bold;
-    float: right;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 1vw;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.type,
-.title {
-    vertical-align: middle;
-    line-height: 2;
-}
-
 .type {
     background-color: var(--type-main);
     color: white;
     font-size: 2vw;
+    line-height: 2;
     border: .3vw solid white;
     border-radius: 1.5vw;
     margin: .3vw .7vw;
     padding: .3vw .7vw;
+    vertical-align: middle;
     display: inline-block;
     transition: background-color .5s ease-in-out;
 }
@@ -110,8 +90,10 @@ body {
 .title {
     color: white;
     font-size: 3.3vw;
+    line-height: 2;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    vertical-align: middle;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -216,3 +198,5 @@ img {
         border-left: 6px solid var(--border-incident-main);
     }
 }
+
+@media screen and (max-width: 800px) {}

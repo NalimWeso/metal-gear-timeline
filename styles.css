@@ -214,24 +214,79 @@ a:hover {
 }
 
 /* COLORS */
-.content {
+.type-explanation {
 
-    .type-explanation {
-
-        .main,
-        .spin-off,
-        .remake,
-        .non-canon {
-            transition: all .5s ease-in-out;
-        }
+    .main,
+    .spin-off,
+    .remake,
+    .non-canon {
+        transition: all .5s ease-in-out;
     }
+}
 
-    .type-explanation .main {
+.type-explanation .main {
+    background-color: var(--button-main);
+    border: .5vw solid var(--border-main);
+}
+
+.type-explanation .main:hover {
+    background-color: var(--button-hover-main);
+
+    .type {
+        background-color: var(--type-hover-main);
+    }
+}
+
+.type-explanation .spin-off {
+    background-color: var(--button-spin-off);
+    border: .5vw solid var(--border-spin-off);
+}
+
+.type-explanation .spin-off:hover {
+    background-color: var(--button-hover-spin-off);
+
+    .type {
+        background-color: var(--type-hover-spin-off);
+    }
+}
+
+.type-explanation .remake {
+    background-color: var(--button-remake);
+    border: .5vw solid var(--border-remake);
+}
+
+.type-explanation .remake:hover {
+    background-color: var(--button-hover-remake);
+
+    .type {
+        background-color: var(--type-hover-remake);
+    }
+}
+
+.type-explanation .non-canon {
+    background-color: var(--button-non-canon);
+    border: .5vw solid var(--border-non-canon);
+}
+
+.type-explanation .non-canon:hover {
+    background-color: var(--button-hover-non-canon);
+
+    .type {
+        background-color: var(--type-hover-non-canon);
+    }
+}
+
+hr {
+    border: 0.1vw solid var(--border-gray);
+}
+
+.main {
+    .collapsible {
         background-color: var(--button-main);
         border: .5vw solid var(--border-main);
     }
 
-    .type-explanation .main:hover {
+    .collapsible:hover {
         background-color: var(--button-hover-main);
 
         .type {
@@ -239,12 +294,41 @@ a:hover {
         }
     }
 
-    .type-explanation .spin-off {
+    .type {
+        background-color: var(--type-main);
+    }
+
+    .container-info {
+        background-color: var(--text-main);
+        border: .5vw solid var(--border-main);
+    }
+
+    .info {
+        background-color: var(--text-main);
+    }
+
+    .incident {
+        background-color: var(--incident-main);
+        border-bottom: .5vw solid var(--border-main);
+    }
+
+    .image {
+        background-color: var(--border-main);
+    }
+
+    img {
+        border-left: .5vw solid var(--border-main);
+        border-bottom: .5vw solid var(--border-main);
+    }
+}
+
+.spin-off {
+    .collapsible {
         background-color: var(--button-spin-off);
         border: .5vw solid var(--border-spin-off);
     }
 
-    .type-explanation .spin-off:hover {
+    .collapsible:hover {
         background-color: var(--button-hover-spin-off);
 
         .type {
@@ -252,12 +336,41 @@ a:hover {
         }
     }
 
-    .type-explanation .remake {
+    .type {
+        background-color: var(--type-spin-off);
+    }
+
+    .container-info {
+        background-color: var(--text-spin-off);
+        border: .5vw solid var(--border-spin-off);
+    }
+
+    .info {
+        background-color: var(--text-spin-off);
+    }
+
+    .incident {
+        background-color: var(--incident-spin-off);
+        border-bottom: .5vw solid var(--border-spin-off);
+    }
+
+    .image {
+        background-color: var(--border-spin-off);
+    }
+
+    img {
+        border-left: .5vw solid var(--border-spin-off);
+        border-bottom: .5vw solid var(--border-spin-off);
+    }
+}
+
+.remake {
+    .collapsible {
         background-color: var(--button-remake);
         border: .5vw solid var(--border-remake);
     }
 
-    .type-explanation .remake:hover {
+    .collapsible:hover {
         background-color: var(--button-hover-remake);
 
         .type {
@@ -265,12 +378,41 @@ a:hover {
         }
     }
 
-    .type-explanation .non-canon {
+    .type {
+        background-color: var(--type-remake);
+    }
+
+    .container-info {
+        background-color: var(--text-remake);
+        border: .5vw solid var(--border-remake);
+    }
+
+    .info {
+        background-color: var(--text-remake);
+    }
+
+    .incident {
+        background-color: var(--incident-remake);
+        border-bottom: .5vw solid var(--border-remake);
+    }
+
+    .image {
+        background-color: var(--border-remake);
+    }
+
+    img {
+        border-left: .5vw solid var(--border-remake);
+        border-bottom: .5vw solid var(--border-remake);
+    }
+}
+
+.non-canon {
+    .collapsible {
         background-color: var(--button-non-canon);
         border: .5vw solid var(--border-non-canon);
     }
 
-    .type-explanation .non-canon:hover {
+    .collapsible:hover {
         background-color: var(--button-hover-non-canon);
 
         .type {
@@ -278,176 +420,31 @@ a:hover {
         }
     }
 
-    hr {
-        border: 0.1vw solid var(--border-gray);
+    .type {
+        background-color: var(--type-non-canon);
     }
 
-    .main {
-        .collapsible {
-            background-color: var(--button-main);
-            border: .5vw solid var(--border-main);
-        }
-
-        .collapsible:hover {
-            background-color: var(--button-hover-main);
-
-            .type {
-                background-color: var(--type-hover-main);
-            }
-        }
-
-        .type {
-            background-color: var(--type-main);
-        }
-
-        .container-info {
-            background-color: var(--text-main);
-            border: .5vw solid var(--border-main);
-        }
-
-        .info {
-            background-color: var(--text-main);
-        }
-
-        .incident {
-            background-color: var(--incident-main);
-            border-bottom: .5vw solid var(--border-main);
-        }
-
-        .image {
-            background-color: var(--border-main);
-        }
-
-        img {
-            border-left: .5vw solid var(--border-main);
-            border-bottom: .5vw solid var(--border-main);
-        }
+    .container-info {
+        background-color: var(--text-non-canon);
+        border: .5vw solid var(--border-non-canon);
     }
 
-    .spin-off {
-        .collapsible {
-            background-color: var(--button-spin-off);
-            border: .5vw solid var(--border-spin-off);
-        }
-
-        .collapsible:hover {
-            background-color: var(--button-hover-spin-off);
-
-            .type {
-                background-color: var(--type-hover-spin-off);
-            }
-        }
-
-        .type {
-            background-color: var(--type-spin-off);
-        }
-
-        .container-info {
-            background-color: var(--text-spin-off);
-            border: .5vw solid var(--border-spin-off);
-        }
-
-        .info {
-            background-color: var(--text-spin-off);
-        }
-
-        .incident {
-            background-color: var(--incident-spin-off);
-            border-bottom: .5vw solid var(--border-spin-off);
-        }
-
-        .image {
-            background-color: var(--border-spin-off);
-        }
-
-        img {
-            border-left: .5vw solid var(--border-spin-off);
-            border-bottom: .5vw solid var(--border-spin-off);
-        }
+    .info {
+        background-color: var(--text-non-canon);
     }
 
-    .remake {
-        .collapsible {
-            background-color: var(--button-remake);
-            border: .5vw solid var(--border-remake);
-        }
-
-        .collapsible:hover {
-            background-color: var(--button-hover-remake);
-
-            .type {
-                background-color: var(--type-hover-remake);
-            }
-        }
-
-        .type {
-            background-color: var(--type-remake);
-        }
-
-        .container-info {
-            background-color: var(--text-remake);
-            border: .5vw solid var(--border-remake);
-        }
-
-        .info {
-            background-color: var(--text-remake);
-        }
-
-        .incident {
-            background-color: var(--incident-remake);
-            border-bottom: .5vw solid var(--border-remake);
-        }
-
-        .image {
-            background-color: var(--border-remake);
-        }
-
-        img {
-            border-left: .5vw solid var(--border-remake);
-            border-bottom: .5vw solid var(--border-remake);
-        }
+    .incident {
+        background-color: var(--incident-non-canon);
+        border-bottom: .5vw solid var(--border-non-canon);
     }
 
-    .non-canon {
-        .collapsible {
-            background-color: var(--button-non-canon);
-            border: .5vw solid var(--border-non-canon);
-        }
+    .image {
+        background-color: var(--border-non-canon);
+    }
 
-        .collapsible:hover {
-            background-color: var(--button-hover-non-canon);
-
-            .type {
-                background-color: var(--type-hover-non-canon);
-            }
-        }
-
-        .type {
-            background-color: var(--type-non-canon);
-        }
-
-        .container-info {
-            background-color: var(--text-non-canon);
-            border: .5vw solid var(--border-non-canon);
-        }
-
-        .info {
-            background-color: var(--text-non-canon);
-        }
-
-        .incident {
-            background-color: var(--incident-non-canon);
-            border-bottom: .5vw solid var(--border-non-canon);
-        }
-
-        .image {
-            background-color: var(--border-non-canon);
-        }
-
-        img {
-            border-left: .5vw solid var(--border-non-canon);
-            border-bottom: .5vw solid var(--border-non-canon);
-        }
+    img {
+        border-left: .5vw solid var(--border-non-canon);
+        border-bottom: .5vw solid var(--border-non-canon);
     }
 }
 
@@ -515,147 +512,146 @@ a:hover {
         width: 276px;
     }
 
-    .content {
-        .explanation {
-            border: 6px solid var(--border-gray);
-        }
 
-        .type-explanation .main {
-            background-color: var(--button-main);
+    .explanation {
+        border: 6px solid var(--border-gray);
+    }
+
+    .type-explanation .main {
+        background-color: var(--button-main);
+        border: 6px solid var(--border-main);
+    }
+
+    .type-explanation .main:hover {
+        background-color: var(--button-hover-main);
+
+        .type {
+            background-color: var(--type-hover-main);
+        }
+    }
+
+    .type-explanation .spin-off {
+        background-color: var(--button-spin-off);
+        border: 6px solid var(--border-spin-off);
+    }
+
+    .type-explanation .spin-off:hover {
+        background-color: var(--button-hover-spin-off);
+
+        .type {
+            background-color: var(--type-hover-spin-off);
+        }
+    }
+
+    .type-explanation .remake {
+        background-color: var(--button-remake);
+        border: 6px solid var(--border-remake);
+    }
+
+    .type-explanation .remake:hover {
+        background-color: var(--button-hover-remake);
+
+        .type {
+            background-color: var(--type-hover-remake);
+        }
+    }
+
+    .type-explanation .non-canon {
+        background-color: var(--button-non-canon);
+        border: 6px solid var(--border-non-canon);
+    }
+
+    .type-explanation .non-canon:hover {
+        background-color: var(--button-hover-non-canon);
+
+        .type {
+            background-color: var(--type-hover-non-canon);
+        }
+    }
+
+    hr {
+        border: 1.2px solid var(--border-gray);
+    }
+
+    .main {
+        .collapsible {
             border: 6px solid var(--border-main);
         }
 
-        .type-explanation .main:hover {
-            background-color: var(--button-hover-main);
-
-            .type {
-                background-color: var(--type-hover-main);
-            }
+        .container-info {
+            border: 6px solid var(--border-main);
         }
 
-        .type-explanation .spin-off {
-            background-color: var(--button-spin-off);
+        .incident {
+            border-bottom: 6px solid var(--border-main);
+        }
+
+        img {
+            border-left: 6px solid var(--border-main);
+            border-bottom: 6px solid var(--border-main);
+        }
+    }
+
+    .spin-off {
+        .collapsible {
             border: 6px solid var(--border-spin-off);
         }
 
-        .type-explanation .spin-off:hover {
-            background-color: var(--button-hover-spin-off);
-
-            .type {
-                background-color: var(--type-hover-spin-off);
-            }
+        .container-info {
+            border: 6px solid var(--border-spin-off);
         }
 
-        .type-explanation .remake {
-            background-color: var(--button-remake);
+        .incident {
+            border-bottom: 6px solid var(--border-spin-off);
+        }
+
+        img {
+            border-left: 6px solid var(--border-spin-off);
+            border-bottom: 6px solid var(--border-spin-off);
+        }
+    }
+
+    .remake {
+        .collapsible {
             border: 6px solid var(--border-remake);
         }
 
-        .type-explanation .remake:hover {
-            background-color: var(--button-hover-remake);
-
-            .type {
-                background-color: var(--type-hover-remake);
-            }
+        .container-info {
+            border: 6px solid var(--border-remake);
         }
 
-        .type-explanation .non-canon {
-            background-color: var(--button-non-canon);
+        .incident {
+            border-bottom: 6px solid var(--border-remake);
+        }
+
+        img {
+            border-left: 6px solid var(--border-remake);
+            border-bottom: 6px solid var(--border-remake);
+        }
+    }
+
+    .non-canon {
+        .collapsible {
             border: 6px solid var(--border-non-canon);
         }
 
-        .type-explanation .non-canon:hover {
-            background-color: var(--button-hover-non-canon);
-
-            .type {
-                background-color: var(--type-hover-non-canon);
-            }
+        .container-info {
+            border: 6px solid var(--border-non-canon);
         }
 
-        hr {
-            border: 1.2px solid var(--border-gray);
+        .incident {
+            border-bottom: 6px solid var(--border-non-canon);
         }
 
-        .main {
-            .collapsible {
-                border: 6px solid var(--border-main);
-            }
-
-            .container-info {
-                border: 6px solid var(--border-main);
-            }
-
-            .incident {
-                border-bottom: 6px solid var(--border-main);
-            }
-
-            img {
-                border-left: 6px solid var(--border-main);
-                border-bottom: 6px solid var(--border-main);
-            }
-        }
-
-        .spin-off {
-            .collapsible {
-                border: 6px solid var(--border-spin-off);
-            }
-
-            .container-info {
-                border: 6px solid var(--border-spin-off);
-            }
-
-            .incident {
-                border-bottom: 6px solid var(--border-spin-off);
-            }
-
-            img {
-                border-left: 6px solid var(--border-spin-off);
-                border-bottom: 6px solid var(--border-spin-off);
-            }
-        }
-
-        .remake {
-            .collapsible {
-                border: 6px solid var(--border-remake);
-            }
-
-            .container-info {
-                border: 6px solid var(--border-remake);
-            }
-
-            .incident {
-                border-bottom: 6px solid var(--border-remake);
-            }
-
-            img {
-                border-left: 6px solid var(--border-remake);
-                border-bottom: 6px solid var(--border-remake);
-            }
-        }
-
-        .non-canon {
-            .collapsible {
-                border: 6px solid var(--border-non-canon);
-            }
-
-            .container-info {
-                border: 6px solid var(--border-non-canon);
-            }
-
-            .incident {
-                border-bottom: 6px solid var(--border-non-canon);
-            }
-
-            img {
-                border-left: 6px solid var(--border-non-canon);
-                border-bottom: 6px solid var(--border-non-canon);
-            }
+        img {
+            border-left: 6px solid var(--border-non-canon);
+            border-bottom: 6px solid var(--border-non-canon);
         }
     }
+}
 
-    footer {
-        font-size: 18px;
-    }
+footer {
+    font-size: 18px;
 }
 
 /* RESPONSIVE MAX */

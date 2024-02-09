@@ -51,7 +51,7 @@ body {
     flex-direction: column;
 }
 
-.type-explanation {
+.types-explanation {
     width: 90%;
     max-width: 1400px;
 }
@@ -214,7 +214,7 @@ a:hover {
 }
 
 /* COLORS */
-.type-explanation {
+.types-explanation {
 
     .main,
     .spin-off,
@@ -224,12 +224,12 @@ a:hover {
     }
 }
 
-.type-explanation .main {
+.types-explanation .main {
     background-color: var(--button-main);
     border: .5vw solid var(--border-main);
 }
 
-.type-explanation .main:hover {
+.types-explanation .main:hover {
     background-color: var(--button-hover-main);
 
     .type {
@@ -237,12 +237,12 @@ a:hover {
     }
 }
 
-.type-explanation .spin-off {
+.types-explanation .spin-off {
     background-color: var(--button-spin-off);
     border: .5vw solid var(--border-spin-off);
 }
 
-.type-explanation .spin-off:hover {
+.types-explanation .spin-off:hover {
     background-color: var(--button-hover-spin-off);
 
     .type {
@@ -250,12 +250,12 @@ a:hover {
     }
 }
 
-.type-explanation .remake {
+.types-explanation .remake {
     background-color: var(--button-remake);
     border: .5vw solid var(--border-remake);
 }
 
-.type-explanation .remake:hover {
+.types-explanation .remake:hover {
     background-color: var(--button-hover-remake);
 
     .type {
@@ -263,12 +263,12 @@ a:hover {
     }
 }
 
-.type-explanation .non-canon {
+.types-explanation .non-canon {
     background-color: var(--button-non-canon);
     border: .5vw solid var(--border-non-canon);
 }
 
-.type-explanation .non-canon:hover {
+.types-explanation .non-canon:hover {
     background-color: var(--button-hover-non-canon);
 
     .type {
@@ -517,12 +517,12 @@ hr {
         border: 6px solid var(--border-gray);
     }
 
-    .type-explanation .main {
+    .types-explanation .main {
         background-color: var(--button-main);
         border: 6px solid var(--border-main);
     }
 
-    .type-explanation .main:hover {
+    .types-explanation .main:hover {
         background-color: var(--button-hover-main);
 
         .type {
@@ -530,12 +530,12 @@ hr {
         }
     }
 
-    .type-explanation .spin-off {
+    .types-explanation .spin-off {
         background-color: var(--button-spin-off);
         border: 6px solid var(--border-spin-off);
     }
 
-    .type-explanation .spin-off:hover {
+    .types-explanation .spin-off:hover {
         background-color: var(--button-hover-spin-off);
 
         .type {
@@ -543,12 +543,12 @@ hr {
         }
     }
 
-    .type-explanation .remake {
+    .types-explanation .remake {
         background-color: var(--button-remake);
         border: 6px solid var(--border-remake);
     }
 
-    .type-explanation .remake:hover {
+    .types-explanation .remake:hover {
         background-color: var(--button-hover-remake);
 
         .type {
@@ -556,12 +556,12 @@ hr {
         }
     }
 
-    .type-explanation .non-canon {
+    .types-explanation .non-canon {
         background-color: var(--button-non-canon);
         border: 6px solid var(--border-non-canon);
     }
 
-    .type-explanation .non-canon:hover {
+    .types-explanation .non-canon:hover {
         background-color: var(--button-hover-non-canon);
 
         .type {
@@ -656,7 +656,7 @@ footer {
 
 /* RESPONSIVE MAX */
 @media screen and (max-width: 800px) {
-    .type-explanation {
+    .types-explanation {
         width: 99%;
     }
 

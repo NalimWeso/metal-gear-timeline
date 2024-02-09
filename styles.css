@@ -50,6 +50,31 @@ body {
     flex-direction: column;
 }
 
+.explanation {
+    line-height: 5vw;
+    margin: 2vw 1vw;
+    padding: 1.5vw 2vw 1.7vw 2vw;
+    border: .5vw solid gray;
+    border-radius: 1vw;
+}
+
+.explanation .type {
+    text-align: center;
+    text-wrap: nowrap;
+    margin-left: -0.5vw;
+    margin-right: 0.5vw;
+    vertical-align: calc(0% + 0.1vw);
+    display: inline-block;
+}
+
+.explanation .text {
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: inline-block;
+}
+
 .container-game {
     width: 90%;
     max-width: 1200px;
@@ -93,8 +118,8 @@ body {
     line-height: 2;
     border: .3vw solid white;
     border-radius: 1.5vw;
-    margin: .3vw .7vw;
-    padding: .3vw .7vw;
+    margin: .6vw .7vw .3vw .7vw;
+    padding: .8vw .7vw .3vw .7vw;
     vertical-align: middle;
     display: inline-block;
     transition: background-color .5s ease-in-out;
@@ -338,21 +363,17 @@ img {
         padding: 6px 0;
     }
 
-    .collapsible:after {
-        font-size: 24px;
-        right: 12px;
-    }
-
     .type {
         font-size: 24px;
         border: 3.6px solid;
         border-radius: 18px;
-        margin: 3.6px 8.4px;
-        padding: 3.6px 8.4px;
+        margin: 3px 8.4px 1px 8.4px;
+        padding: 6px 8.4px 3.6px 8.4px;
     }
 
     .title {
         font-size: 39.6px;
+        margin-bottom: 3.6px;
     }
 
     .container-info {

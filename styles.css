@@ -30,7 +30,6 @@
     --border-non-canon: #4A0000;
     --incident-non-canon: #5E3535;
     --text-non-canon: #8B3838;
-
     --border-gray: #757B7A;
 }
 
@@ -195,6 +194,23 @@ img {
 
 .container-image {
     display: inline-block;
+}
+
+footer {
+    font-size: 1.5vw;
+}
+
+a {
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: var(--border-gray);
 }
 
 /* COLORS */
@@ -636,6 +652,10 @@ img {
             }
         }
     }
+
+    footer {
+        font-size: 18px;
+    }
 }
 
 /* RESPONSIVE MAX */
@@ -646,5 +666,9 @@ img {
 
     .container-game {
         width: 99%;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }

@@ -1,2 +1,2 @@
-# metal-gear-timeline
+# Metal Gear Timeline
 Work in Progress...

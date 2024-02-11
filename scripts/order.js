@@ -5,10 +5,14 @@ info.innerHTML = typesExplanation + filterOptions;
 
 function timelineOrder() {
     content.innerHTML = gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid_PeaceWalker + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGear + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearRising_Revengeance + footer;
+
+    setupCollapsible();
 }
 
 function releaseOrder() {
     content.innerHTML = gameMetalGear + gameSnakesRevenge + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid_TheTwinSnakes + gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearSolid_PeaceWalker + gameMetalGearRising_Revengeance + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGearSurvive + gameMetalGearSolidDelta_SnakeEater + footer;
+
+    setupCollapsible();
 }
 
 document.querySelector('.filters').addEventListener('click', () => {

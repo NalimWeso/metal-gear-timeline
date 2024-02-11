@@ -1,7 +1,7 @@
-const info = document.querySelector('.info');
+const pageStart = document.querySelector('.page-start');
 const content = document.querySelector('.content');
 
-info.innerHTML = typesExplanation + filterOptions;
+pageStart.innerHTML = typesExplanation + filterOptions;
 
 function timelineOrder() {
     content.innerHTML = gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid_PeaceWalker + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGear + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearRising_Revengeance + footer;
@@ -14,6 +14,30 @@ function releaseOrder() {
 
     setupCollapsible();
 }
+
+function disableCheckboxes() {
+    document.getElementById("remake").disabled = true;
+    document.getElementById("non-canon").disabled = true;
+}
+
+disableCheckboxes();
+
+const timelineRadio = document.querySelector('input[name="order"][value="timeline-order"]');
+
+timelineRadio.addEventListener('change', () => {
+    if (timelineRadio.checked) {
+        disableCheckboxes();
+    }
+});
+
+const releaseRadio = document.querySelector('input[name="order"][value="release-order"]');
+
+releaseRadio.addEventListener('change', () => {
+    if (releaseRadio.checked) {
+        document.getElementById("remake").disabled = false;
+        document.getElementById("non-canon").disabled = false;
+    }
+});
 
 document.querySelector('.filters').addEventListener('click', () => {
     const selectedRadio = document.querySelector('input[type=radio]:checked');

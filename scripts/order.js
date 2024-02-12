@@ -4,7 +4,7 @@ const content = document.querySelector('.content');
 pageStart.innerHTML = typesExplanation + filterOptions;
 
 function timelineOrder() {
-    content.innerHTML = gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid_PeaceWalker + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGear + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearRising_Revengeance + footer;
+    content.innerHTML = timelineOrderInfo + gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid_PeaceWalker + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGear + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearRising_Revengeance + footer;
 
     setupCollapsible();
 }
@@ -16,8 +16,25 @@ function releaseOrder() {
 }
 
 function disableCheckboxes() {
+    document.getElementById("remake").checked = false;
     document.getElementById("remake").disabled = true;
+    document.getElementById("remake").nextElementSibling.style.color = "grey";
+    document.querySelector('.color-remake').style.color = "grey";
+
+    document.getElementById("non-canon").checked = false;
     document.getElementById("non-canon").disabled = true;
+    document.getElementById("non-canon").nextElementSibling.style.color = "grey";
+    document.querySelector('.color-non-canon').style.color = "grey";
+}
+
+function enableCheckboxes() {
+    document.getElementById("remake").disabled = false;
+    document.getElementById("remake").nextElementSibling.style.color = "white";
+    document.querySelector('.color-remake').style.color = "yellow";
+
+    document.getElementById("non-canon").disabled = false;
+    document.getElementById("non-canon").nextElementSibling.style.color = "white";
+    document.querySelector('.color-non-canon').style.color = "red";
 }
 
 disableCheckboxes();
@@ -34,8 +51,7 @@ const releaseRadio = document.querySelector('input[name="order"][value="release-
 
 releaseRadio.addEventListener('change', () => {
     if (releaseRadio.checked) {
-        document.getElementById("remake").disabled = false;
-        document.getElementById("non-canon").disabled = false;
+        enableCheckboxes();
     }
 });
 

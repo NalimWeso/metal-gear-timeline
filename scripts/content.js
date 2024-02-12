@@ -24,27 +24,62 @@ const typesExplanation = `
         </div>
     </div>
 </div>
+
+<hr>
 `;
 
 const filterOptions = `
+<div class="filter-options-container" unselectable="on" onselectstart="return false">
+    <div class="filter-options-radio">
+        <input type="radio" id="radio-one" name="order" value="timeline-order" checked>
+		<label for="radio-one">TIMELINE ORDER</label>
+		<input type="radio" id="radio-two" name="order" value="release-order">
+		<label for="radio-two">RELEASE ORDER</label>
+    </div>
+
+        <div class="filter-options-checkbox">
+            <div class="checkbox-container">
+                <input type="checkbox" id="spin-off" checked>
+                <label for="spin-off">Show <span class="color-spin-off">SPIN-OFF</span> Games (Highly Recommended)</label>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="remake">
+                <label for="remake">Show <span class="color-remake">REMAKE</span> Games (Only Release Order)</label>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="non-canon">
+                <label for="non-canon">Show <span class="color-non-canon">NON-CANON</span> Games (Only Release Order)</label>
+            </div>
+        </div>
+
+    <div class="filter-options-button">
+        <button class="filters">APPLY</button>
+    </div>
+</div>
+
 <hr>
+`;
 
-<input type="radio" name="order" value="timeline-order" checked>
-<label for="timeline-order">TIMELINE ORDER</label>
+const timelineOrderInfo = `
+<div class="timeline-order-info-container">
+    <div class="timeline-order-info">
+        <p>The list doesn't include games that are <span class="color-remake">remakes</span>:</p>
+        <ul>
+            <li><strong>Metal Gear Solid: The Twin Snakes (2004)</strong></li>
+            <li><strong>Metal Gear Solid Δ: Snake Eater (TBA)</strong></li>
+        </ul>
+    </div>
 
-<input type="radio" name="order" value="release-order">
-<label for="release-order">RELEASE ORDER</label>
-
-<input type="checkbox" id="spin-off" checked>
-<label for="spin-off">Show SPIN-OFF GAMES (Highly Recommended)</label>
-
-<input type="checkbox" id="remake">
-<label for="remake">Show REMAKE GAMES (Only RELEASE ORDER)</label>
-
-<input type="checkbox" id="non-canon">
-<label for="non-canon">Show NON-CANON GAMES (Only RELEASE ORDER)</label>
-
-<button class="filters">Apply Filters</button>
+    <div class="timeline-order-info">
+        <p>The list doesn't include games that are <span class="color-non-canon">non-canon</span>:</p>
+        <ul>
+            <li><strong>Snake's Revenge (1990)</strong></li>
+            <li><strong>Metal Gear Survive (2018)</strong></li>
+        </ul>
+    </div>
+</div>
 
 <hr>
 `;

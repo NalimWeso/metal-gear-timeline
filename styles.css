@@ -87,6 +87,165 @@ hr {
     width: 100%;
 }
 
+.filter-options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-options-radio {
+    font-weight: bold;
+    display: flex;
+    overflow: hidden;
+}
+
+.filter-options-radio input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.filter-options-radio label {
+    background-color: var(--button-main);
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 2vw 1vw 2vw;
+    padding: .8vw 1vw .7vw 1vw;
+    border: .5vw solid var(--border-main);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.filter-options-radio input:checked+label {
+    background-color: var(--type-main);
+    border: .5vw solid var(--type-hover-main);
+    box-shadow: none;
+}
+
+.filter-options-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    margin: .4vw 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 2.5vw;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]+label:before {
+    background-color: var(--button-main);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: .1vw;
+    border: .3vw solid var(--border-main);
+    border-radius: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container input[type="checkbox"]:disabled+label:before {
+    background-color: darkgray;
+    border-color: dimgray;
+}
+
+.checkbox-container input[type="checkbox"]:checked+label:before {
+    background-color: var(--type-main);
+    color: white;
+    content: '✔';
+    line-height: 0.5;
+    padding: .1vw;
+    border: .3vw solid var(--type-hover-main);
+}
+
+.checkbox-container label {
+    font-size: 1.5vw;
+}
+
+.filters {
+    background-color: var(--button-main);
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin: .5vw 0 0 0;
+    padding: .8vw 1vw .7vw 1vw;
+    border: .5vw solid var(--border-main);
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.filters:hover {
+    background-color: var(--button-hover-main);
+}
+
+.color-spin-off,
+.color-remake,
+.color-non-canon {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.color-spin-off {
+    color: mediumpurple;
+}
+
+.color-remake {
+    color: yellow;
+}
+
+.color-non-canon {
+    color: red;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 1vw 0 0 0;
+    padding: 0 2vw;
+    list-style-type: "❌";
+}
+
+li {
+    font-size: 1.4vw;
+}
+
+.timeline-order-info-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-order-info {
+    margin: 0 4vw;
+}
+
 .container-game {
     width: 90%;
     max-width: 1200px;

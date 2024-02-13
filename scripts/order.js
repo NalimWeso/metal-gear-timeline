@@ -1,7 +1,7 @@
 const pageStart = document.querySelector('.page-start');
 const content = document.querySelector('.content');
 
-pageStart.innerHTML = typesExplanation + filterOptions;
+pageStart.innerHTML = title + typesExplanation + filterOptions;
 
 function timelineOrder() {
     content.innerHTML = timelineOrderInfo + gameMetalGearSolid3_SnakeEater + gameMetalGearSolid_PortableOps + gameMetalGearSolid_PeaceWalker + gameMetalGearSolidV_GroundZeroes + gameMetalGearSolidV_ThePhantomPain + gameMetalGear + gameMetalGear2_SolidSnake + gameMetalGearSolid + gameMetalGearSolid2_SonsOfLiberty + gameMetalGearSolid4_GunsOfThePatriots + gameMetalGearRising_Revengeance + footer;

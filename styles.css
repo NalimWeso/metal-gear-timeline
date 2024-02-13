@@ -30,6 +30,7 @@
     --border-non-canon: #4A0000;
     --incident-non-canon: #5E3535;
     --text-non-canon: #8B3838;
+
     --border-gray: #757B7A;
 }
 
@@ -410,8 +411,6 @@ li {
 img {
     width: 23vw;
     height: 100%;
-    border-left: .5vw solid;
-    border-bottom: .5vw solid;
 }
 
 .container-image {

@@ -1,4 +1,6 @@
 :root {
+    --main-title: #5FB7E6;
+
     --button-main: #38598B;
     --button-hover-main: #113F67;
     --type-main: #0B8457;
@@ -37,6 +39,7 @@
     --filter-button-active: #0B8457;
     --filter-button-active-hover: #086341;
     --filter-button-active-border: #043523;
+
     --border-gray: #757B7A;
 }
 
@@ -57,6 +60,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+h1 {
+    color: var(--main-title);
+    font-family: "Kanit", sans-serif;
+    font-size: 7vw;
+    text-decoration: underline;
+    text-wrap: nowrap;
+    margin: -1.5vw 0 0 0;
+    padding: 0;
+    cursor: default;
 }
 
 .types-explanation {
@@ -618,6 +632,11 @@ a:hover {
 
 /* RESPONSIVE MIN */
 @media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 120px;
+        margin-top: -26px;
+    }
+
     .types-explanation .main {
         border: 6px solid var(--border-main);
     }
@@ -841,6 +860,11 @@ a:hover {
 
 /* RESPONSIVE MAX */
 @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
     .types-explanation {
         width: 99%;
     }

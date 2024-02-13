@@ -1,3 +1,7 @@
+const title = `
+<h1 unselectable="on" onselectstart="return false">METAL GEAR SAGA</h1>
+`;
+
 const typesExplanation = `
 <div class="types-explanation">
     <div class="explanation main">

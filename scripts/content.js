@@ -329,7 +329,7 @@ let gameMetalGearSurvive = `
         <div class="info">
             <div class="incident">1975: Wormhole</div>
             <div class="text">
-                Non-canonical sequel to <strong>MGS V: Ground Zeroes (2014)</strong>. The <strong>Wormhole</strong> situation occurred in <strong>1975</strong>, during which the <strong>Captain</strong>, a former soldier of the <strong>Militaires Sans Frontières</strong>, traveled to the parallel world of <strong>Dite</strong> to <strong>recover</strong> the survivors of an expedition team and their research, enduring both the <strong>hostile environment</strong> and its <strong>inhabitants</strong>. One of his tasks was also to <strong>find</strong> a cure for an infection that occurred when the wormhole infected him earlier.
+                Non-canonical prequel to <strong>MGS V: The Phantom Pain (2015)</strong>. The <strong>Wormhole</strong> situation occurred in <strong>1975</strong>, during which the <strong>Captain</strong>, a former soldier of the <strong>Militaires Sans Frontières</strong>, traveled to the parallel world of <strong>Dite</strong> to <strong>recover</strong> the survivors of an expedition team and their research, enduring both the <strong>hostile environment</strong> and its <strong>inhabitants</strong>. One of his tasks was also to <strong>find</strong> a cure for an infection that occurred when the wormhole infected him earlier.
             </div>
         </div>
         <img src="images/Metal Gear Survive (2018).jpg" alt="Metal Gear Survive (2018)">

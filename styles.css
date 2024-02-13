@@ -31,6 +31,12 @@
     --incident-non-canon: #5E3535;
     --text-non-canon: #8B3838;
 
+    --filter-button: #38598B;
+    --filter-button-hover: #113F67;
+    --filter-button-border: #00204A;
+    --filter-button-active: #0B8457;
+    --filter-button-active-hover: #086341;
+    --filter-button-active-border: #043523;
     --border-gray: #757B7A;
 }
 
@@ -167,21 +173,29 @@ hr {
 }
 
 .filter-options-radio label {
-    background-color: var(--button-main);
+    background-color: var(--filter-button);
     font-size: 2vw;
     text-align: center;
     margin: 0 2vw 1vw 2vw;
     padding: .8vw 1vw .7vw 1vw;
-    border: .5vw solid var(--border-main);
+    border: .5vw solid var(--filter-button-border);
     border-radius: 1vw;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-options-radio label:hover {
+    background-color: var(--filter-button-hover);
 }
 
 .filter-options-radio input:checked+label {
-    background-color: var(--type-main);
-    border: .5vw solid var(--type-hover-main);
+    background-color: var(--filter-button-active);
+    border: .5vw solid var(--filter-button-active-border);
     box-shadow: none;
+}
+
+.filter-options-radio input:checked+label:hover {
+    background-color: var(--filter-button-active-hover);
 }
 
 .filter-options-checkbox {
@@ -646,12 +660,12 @@ a:hover {
         font-size: 24px;
         margin: 0 24px 12px 24px;
         padding: 9.6px 12px 8.4px 12px;
-        border: 6px solid var(--border-main);
+        border: 6px solid var(--filter-button-border);
         border-radius: 12px;
     }
 
     .filter-options-radio input:checked+label {
-        border: 6px solid var(--type-hover-main);
+        border: 6px solid var(--filter-button-active-border);
     }
 
     .checkbox-container {
@@ -835,12 +849,12 @@ a:hover {
         font-size: 16px;
         margin: 0 16px 8px 16px;
         padding: 6.4px 8px 5.6px 8px;
-        border: 4px solid var(--border-main);
+        border: 4px solid var(--filter-button-border);
         border-radius: 8px;
     }
 
     .filter-options-radio input:checked+label {
-        border: 4px solid var(--type-hover-main);
+        border: 4px solid var(--filter-button-active-border);
     }
 
     .checkbox-container {

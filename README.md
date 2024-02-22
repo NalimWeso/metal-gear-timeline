@@ -6,7 +6,7 @@
   </kbd>
 </p>
 
-Mechs with nuclear missiles, espionage and... snakes. Unfolding over 50 years, this great Japanese epic was created in the mind of the nerd and cinephile **Hideo Kojima**, who poured his eccentricities onto the pages of the script, and then molded them into one of the most recognizable gaming franchises in the world - **Metal Gear**!
+Mechs with nuclear missiles, espionage and... snakes. Unfolding over 50 years, this great Japanese epic was created in the mind of the nerd and cinephile **Hideo Kojima**, who poured his eccentricities onto the pages of the script, and then molded them into one of the most recognizable gaming franchises in the world – **Metal Gear**!
 
 #
 

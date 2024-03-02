@@ -630,7 +630,6 @@ a:hover {
     }
 }
 
-/* RESPONSIVE MIN */
 @media screen and (min-width: 1200px) {
     h1 {
         font-size: 120px;
@@ -858,7 +857,6 @@ a:hover {
     }
 }
 
-/* RESPONSIVE MAX */
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 40px;

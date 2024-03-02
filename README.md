@@ -1,4 +1,4 @@
-# Metal1 Gear Timeline
+# Metal Gear Timeline
 
 <p align="center">
   <kbd>

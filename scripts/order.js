@@ -1,5 +1,4 @@
 const pageStart = document.querySelector('.page-start');
-const pageStart2 = document.querySelector('.page-start');
 const content = document.querySelector('.content');
 
 pageStart.innerHTML = title + typesExplanation + filterOptions;

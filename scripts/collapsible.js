@@ -15,4 +15,3 @@ function setupCollapsible() {
 }
 
 setupCollapsible();
-1

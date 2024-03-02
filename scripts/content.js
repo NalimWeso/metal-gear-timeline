@@ -6,25 +6,25 @@ const typesExplanation = `
 <div class="types-explanation">
     <div class="explanation main">
         <div class="text"><span class="type">MAIN</span>
-            means the game is considered an integral part of the main storyline within the established canon of the franchise.
+        The game is considered an integral part of the main storyline within the established canon of the franchise.
         </div>
     </div>
 
     <div class="explanation spin-off">
         <div class="text"><span class="type">SPIN-OFF</span>
-            means the game may not be fully canon, but its plot intersects with or complements the main story, expanding upon elements or characters within the established universe.
+        The game may not be fully canon, but its plot intersects with or complements the main story, expanding upon elements or characters within the established universe.
         </div>
     </div>
 
     <div class="explanation remake">
         <div class="text"><span class="type">REMAKE</span>
-            means the game retells the story of the original game with updated graphics and other improvements, but it is not considered canon.
+        The game retells the story of the original game with updated graphics and other improvements, but it is not considered canon.
         </div>
     </div>
 
     <div class="explanation non-canon">
         <div class="text"><span class="type">NON-CANON</span>
-            means the game exists outside of the established continuity of the franchise, and its plot is not considered canon.
+        The game exists outside of the established continuity of the franchise, and its plot is not considered canon.
         </div>
     </div>
 </div>

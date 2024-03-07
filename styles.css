@@ -76,6 +76,7 @@ h1 {
 .types-explanation {
     width: 90%;
     max-width: 1400px;
+    cursor: default;
 
     .main,
     .spin-off,
